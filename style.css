@@ -1,3 +1,72 @@
-h1, h2 {
+h1,
+h2 {
   font-family: Lato;
+}
+
+.progress > div {
+  background-color: #edf2f7;
+  /* border-radius: 30%; */
+}
+
+.progress {
+  background-color: green;
+  /* z-index: 1000; */
+}
+
+:disabled {
+  color: gray !important;
+  background-color: transparent;
+  border-color: gray;
+}
+
+:disabled:hover {
+  background-color: lightgray;
+}
+/* .active-back {
+  color: #cc1f1a !important;
+  border-color: #cc1f1a !important;
+}
+.active-back:hover {
+  color: white !important;
+  background-color: green !important;
+}
+
+.active-next {
+  color: gray !important;
+  border-color: gray !important;
+}
+.active-next:hover {
+  color: white !important;
+  background-color: lightgray !important;
+} */
+
+.progress-line {
+  animation: progressing-line 1s ease-in forwards;
+}
+
+.progress-number {
+  animation: progress-bubble 1s ease-in forwards 0.5s;
+}
+
+@keyframes progressing-line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes progress-bubble {
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+    background-color: #51d88a;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #51d88a;
+  }
 }
